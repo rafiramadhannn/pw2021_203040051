@@ -1,9 +1,7 @@
 <?php
-/*
-Nama    : Mochamad Rafi Ramadhan
-NRP     : 203040051
-Shift   : Praktikum PW Jumat 10.00
-*/
+// Mochamad Rafi Ramadhan
+// 203040051
+// Tugas Besar Pemrograman Web
 ?>
 
 
@@ -12,7 +10,7 @@ Shift   : Praktikum PW Jumat 10.00
 session_start();
 
 if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
+    header("Location: ../index.php");
     exit;
 }
 require 'functions.php';
@@ -24,14 +22,10 @@ if (isset($_POST["submit"])) {
     if (ubah($_POST) > 0) {
         echo "<script>
                 alert('Data Berhasil Di ubah!');
-                document.location.href = 'admin.php';
+                document.location.href = '../admin.php';
                 </script>";
     } else {
-        echo "<script>
-                alert('Data Gagal Di Ubah!');
-                document.location.href = 'admin.php';
-            </script>";
-        
+        echo "data gagal diubah!";
     }
 }
 ?>

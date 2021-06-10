@@ -1,9 +1,7 @@
 <?php
-/*
-Nama    : Mochamad Rafi Ramadhan
-NRP     : 203040051
-Shift   : Praktikum PW Jumat 10.00
-*/
+// Mochamad Rafi Ramadhan
+// 203040051
+// Tugas Besar Pemrograman Web
 ?>
 
 
@@ -11,8 +9,8 @@ Shift   : Praktikum PW Jumat 10.00
 <?php
     // Fungsi untuk melakukan koneksi ke database
     function koneksi() {
-        $conn = mysqli_connect("localhost", "root", "");
-        mysqli_select_db($conn, "pw_tubes_203040051");
+        $conn = mysqli_connect("localhost", "pw20051", "#Akun#203040051#") or die("koneksi ke DB gagal");
+        mysqli_select_db($conn, "pw20051_tubes_203040051") or die("Database Salah!");
 
         return $conn;
     }

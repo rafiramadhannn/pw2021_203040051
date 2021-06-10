@@ -1,10 +1,9 @@
 <?php
-/*
-Nama    : Mochamad Rafi Ramadhan
-NRP     : 203040051
-Shift   : Praktikum PW Jumat 10.00
-*/
+// Mochamad Rafi Ramadhan
+// 203040051
+// Tugas Besar Pemrograman Web
 ?>
+
     
 
 

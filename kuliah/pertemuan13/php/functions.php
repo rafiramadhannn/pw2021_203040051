@@ -1,4 +1,12 @@
 <?php
+// Mochamad Rafi Ramadhan
+// 203040051
+// Tugas Besar Pemrograman Web
+?>
+
+
+
+<?php
 function koneksi()
 {
     return mysqli_connect("localhost", "root", "", "pw2021_203040051");

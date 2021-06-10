@@ -16,7 +16,7 @@ if (isset($_POST['ubah'])) {
     echo "
             <script>
                 alert('data berhasil diubah!');
-                document.location.href = '../index.php';
+                document.location.href = 'admin.php';
             </script>";
   } else {
     echo "data gagal diubah!";

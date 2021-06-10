@@ -1,9 +1,7 @@
 <?php
-/*
-Nama    : Mochamad Rafi Ramadhan
-NRP     : 203040051
-Shift   : Praktikum PW Jumat 10.00
-*/
+// Mochamad Rafi Ramadhan
+// 203040051
+// Tugas Besar Pemrograman Web
 ?>
 
 
@@ -57,9 +55,9 @@ $games = query("SELECT * FROM games")
                 <tr>
                     <th scope="row"><?=$i?></th>
                     <td>
-                        <a href="ubah.php?id=<?= $game['id'] ?>"style="color: blue;">Ubah</a>
+                        <a href="ubah.php?id=<?= $game['id']; ?>"style="color: blue;">Ubah</a>
                         
-                        <a href="hapus.php?id=<?= $game['id'] ?>" onclick="return confirm('Hapus Data?')"style="color: red;">Hapus</button></a>
+                        <a href="hapus.php?id=<?= $game['id']; ?>" onclick="return confirm('Hapus Data?')"style="color: red;">Hapus</button></a>
                     </td>
                     <td><?= $game["nama"]?> </td>
                     <td><img width="100px" src="../assets/img/<?= $game["img"] ?>" alt="img"></td>
